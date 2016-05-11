@@ -1,0 +1,26 @@
+{
+  "name": "pres-debate-analysis-2016",
+  "version": "1.0.0",
+  "description": "Analyzes the content of the 2015-2016 presidential debates.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willshiao/pres-debate-analysis-2016.git"
+  },
+  "author": "William Shiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willshiao/pres-debate-analysis-2016/issues"
+  },
+  "homepage": "https://github.com/willshiao/pres-debate-analysis-2016#readme",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "cheerio": "^0.20.0",
+    "lodash": "^4.12.0",
+    "request-promise": "^3.0.0",
+    "transcript-parser": "^0.4.0"
+  }
+}
