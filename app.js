@@ -11,7 +11,8 @@ const globals = new require('./lib/globals');
 const httpHandler = require('./lib/http-handler');
 const IoHandler = require('./lib/io-handler');
 const ioHandler = new IoHandler();
-const analysis = require('./lib/analysis');
+const Analysis = require('./lib/analysis');
+const analysis = new Analysis();
 
 /************************
 * Constants
@@ -20,13 +21,14 @@ const analysis = require('./lib/analysis');
 globals.TP = new TranscriptParser({
   aliases: {
     'TRUMP': [ /.*TRUMP.*/ ]
-  }
+  },
+  blacklist: ['MODERATORS', 'UNKNOWN', 'UNIDENTIFIED MALE', 'UNIDENTIFIED FEMALE', 'UNIDENTIFIABLE', 'AUDIENCE']
 });
 
 /************************
 * Body
 ************************/
-// analyzeTranscripts();
+// analysis.analyzeTranscripts();
 ioHandler.cleanFolders()
   //Save the transcripts
   .then(ioHandler.saveTranscripts)
