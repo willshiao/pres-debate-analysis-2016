@@ -4,7 +4,9 @@
   "description": "Analyzes the content of the 2015-2016 presidential debates.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "sanitize-filename": "^1.6.0",
     "text-statistics": "git+https://github.com/izhan/TextStatistics.js.git#patch-1",
     "transcript-parser": "^0.4.1",
-    "word-frequency": "0.0.0"
-  }
+    "word-frequency": "0.0.0",
+    "snyk": "^1.192.4"
+  },
+  "snyk": true
 }
