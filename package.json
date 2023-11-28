@@ -18,10 +18,10 @@
   "homepage": "https://github.com/willshiao/pres-debate-analysis-2016#readme",
   "dependencies": {
     "bluebird": "^3.3.5",
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "lodash": "^4.12.0",
     "moment": "^2.13.0",
-    "request-promise": "^3.0.0",
+    "request-promise": "^4.0.0",
     "sanitize-filename": "^1.6.0",
     "text-statistics": "git+https://github.com/izhan/TextStatistics.js.git#patch-1",
     "transcript-parser": "^0.4.1",
