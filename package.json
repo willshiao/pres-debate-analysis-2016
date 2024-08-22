@@ -18,7 +18,7 @@
   "homepage": "https://github.com/willshiao/pres-debate-analysis-2016#readme",
   "dependencies": {
     "bluebird": "^3.3.5",
-    "cheerio": "^0.20.0",
+    "cheerio": "^1.0.0",
     "lodash": "^4.12.0",
     "moment": "^2.13.0",
     "request-promise": "^3.0.0",
